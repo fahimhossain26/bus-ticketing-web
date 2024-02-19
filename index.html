@@ -32,7 +32,7 @@
     <div class="modal-action">
       <form method="dialog">
         <!-- if there is a button in form, it will close the modal -->
-        <button class="btn btn-success w-60  mr-28 rounded-full">Continue</button>
+        <button id="relod-page" class="btn btn-success w-60  mr-28 rounded-full">Continue</button>
       </form>
     </div>
   </div>
@@ -391,9 +391,12 @@
             <h1 class="font-bold">Class</h1>
             <h1 class="font-bold">Price</h1>
           </div>
-          <div id="ticke_details">
-            
+
+          <div class="flex gap-6" id="ticke_details" >
+           <div class="flex"> </div>
           </div>
+
+
           <div class="h-[1px] my-2 border-t border-dashed border-t-gray-800"></div>
           <div class="flex justify-between">
             <h1 class="font-bold">Total Price</h1>
@@ -415,23 +418,23 @@
             <div>
               <label class="font-bold" for="name">Passenger Name<sup>*</sup></label>
               <br />
-              <input class="outline-none mt-1 border rounded-md w-full py-2 px-2" type="text"
+              <input id="myInput" class="outline-none mt-1 border rounded-md w-full py-2 px-2" type="text"
                 placeholder="Enter your name..." />
             </div>
             <div>
               <label class="font-bold" for="name">Phone Number<sup>*</sup></label>
               <br />
-              <input id="number" class="outline-none mt-1 border rounded-md w-full py-2 px-2" type="number"
+              <input id="myInput" class="outline-none mt-1 border rounded-md w-full py-2 px-2" type="number"
                 placeholder="Enter your phone number..." />
             </div>
             <div>
               <label class="font-bold" for="name">Email ID<sup>*</sup></label>
               <br />
-              <input class="outline-none mt-1 border rounded-md w-full py-2 px-2" type="email"
+              <input id="myInput" class="outline-none mt-1 border rounded-md w-full py-2 px-2" type="email"
                 placeholder="Enter your email id..." />
             </div>
 
-            <button class="bg-green-500 rounded-md mt-2 font-bold text-white w-full py-2   id="btn-modal" onclick="my_modal_1.showModal()"    ">
+            <button  class="bg-green-500 rounded-md mt-2 font-bold text-white w-full py-2   id="btn-modal" onclick="my_modal_1.showModal()"    ">
               Next
             </button>
 

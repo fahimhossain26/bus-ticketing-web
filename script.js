@@ -13,7 +13,16 @@ for(const btn of allBtn){
             btn.disabled = true;
             ticketprice=ticketprice-550
             alert('you can not buy more than 4 tickets')
-        }  
+            totalSeat=totalSeat+1;
+            seatCount=seatCount-1;
+
+          titleContainer.removeChild[3];
+
+
+
+          
+           
+        } 
         
         
         document.getElementById('seat-count').innerText=seatCount;
@@ -24,8 +33,18 @@ for(const btn of allBtn){
         const title =btn.querySelector('p').innerText;
         const titleContainer= document.getElementById('ticke_details');
          const p= document.createElement("p");
+        
           p.innerText=title;
-        titleContainer.appendChild(p);
+        // titleContainer.appendChild(p);
+        const p2=document.createElement('p');
+        const p3=document.createElement('p')
+         p2.innerText='economi';
+         p3.innerText='550'
+        // titleContainer.appendChild(p2);
+        //  titleContainer.appendChild(p3);
+         titleContainer.append(p,p2,p3)
+        
+
 
           document.getElementById('price').innerText=ticketprice;
 
@@ -50,6 +69,7 @@ if(cuponElement==="NEW15"){
     discountElement.innerText=(ticketprice- disountedPrice);
 
     document.getElementById('grand-hidden').style.visibility="hidden";
+    
 }
 
 //cupon 20
@@ -71,8 +91,16 @@ else{
 }
 //couple cupon 
 
-
-
-
 })
+
+
+
+// reload page 
+const reload=document.getElementById('relod-page');
+reload.onclick=refresh;
+function refresh(){
+    window.location.reload();
+}
+
+
 
