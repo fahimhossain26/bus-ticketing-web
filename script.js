@@ -43,6 +43,10 @@ for(const btn of allBtn){
         // titleContainer.appendChild(p2);
         //  titleContainer.appendChild(p3);
          titleContainer.append(p,p2,p3)
+         //----------------------
+         
+
+         //----------------------
         
 
 
@@ -74,7 +78,7 @@ if(cuponElement==="NEW15"){
 
 //cupon 20
 
-else if(cuponElement==="Couple20"){
+else if(cuponElement==="Couple 20"){
     const discountElement= document.getElementById('grandTotalAmount');
     const disountedPrice= ticketprice * 0.20;
 
@@ -101,6 +105,3 @@ reload.onclick=refresh;
 function refresh(){
     window.location.reload();
 }
-
-
-
