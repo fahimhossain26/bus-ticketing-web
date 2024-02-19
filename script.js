@@ -12,7 +12,9 @@ for(const btn of allBtn){
         if(seatCount>4){
             btn.disabled = true;
             ticketprice=ticketprice-550
-            alert('you can not buy more than 4 tickets')
+            alert ("You Can not select  more than 4 tickets    !! >>>TRY AGAIN<<< !!   ")
+            window.location.reload();
+
             totalSeat=totalSeat+1;
             seatCount=seatCount-1;
 
@@ -38,11 +40,13 @@ for(const btn of allBtn){
         // titleContainer.appendChild(p);
         const p2=document.createElement('p');
         const p3=document.createElement('p')
+        const p4=document.createElement('p')
          p2.innerText='economi';
          p3.innerText='550'
+         p4.innerText='__________';
         // titleContainer.appendChild(p2);
         //  titleContainer.appendChild(p3);
-         titleContainer.append(p,p2,p3)
+         titleContainer.append(p,p2,p3,p4)
          //----------------------
          
 
